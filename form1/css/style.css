@@ -1,0 +1,93 @@
+:root {
+    --bg-color-header: rgb(45, 53, 37);
+    --bg-color-input: rgb(222, 235, 209);
+    --bg-color-buttons: rgb(34, 37, 30);
+}
+body {
+    margin: 0px;
+}
+header {
+    background-color: var(--bg-color-header);
+    display: flex;
+    width: 100%;
+    height: 40px;
+}
+
+#sec1, #sec2 {
+    display: flex;
+    justify-content: center;
+}
+#sec2{
+    margin-top: -30px;
+}
+.geral {
+    display: flex;
+    gap: 150px;
+    margin: 50px 0px 40px 0px;
+}
+
+.left, .right {
+    flex:1;
+}
+.right {
+    align-content: center;
+}
+
+label {
+    font-size: 17px;
+}
+
+.label_box {
+    margin: 20px 0px;
+}
+
+input, select {
+    height: 25px;
+    width: 250px;
+    background-color: var(--bg-color-input);
+    border: none;
+    border: 1px solid #BBB;    
+    border-radius: 3px;
+}
+select {
+    width: 150px;
+}
+input{
+    margin-top: 3px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-left: -445px;
+}
+button {
+    font-size: 15px;    
+    background-color: var(--bg-color-buttons);
+    height: 25px;
+    width: auto;
+    border-radius: 3px;
+    padding: 0px 10px 2px 10px;
+    border: none;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
