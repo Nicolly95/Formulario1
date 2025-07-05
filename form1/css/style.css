@@ -1,7 +1,7 @@
 :root {
     --bg-color-header: rgb(45, 53, 37);
     --bg-color-input: rgb(222, 235, 209);
-    --bg-color-buttons: rgb(34, 37, 30);
+    --bg-color-buttons: rgb(49, 54, 42);
 }
 body {
     margin: 0px;
@@ -62,7 +62,7 @@ input{
     gap: 10px;
     margin-left: -445px;
 }
-button {
+#enviar-input, #clean-input {
     font-size: 15px;    
     background-color: var(--bg-color-buttons);
     height: 25px;
@@ -70,6 +70,10 @@ button {
     border-radius: 3px;
     padding: 0px 10px 2px 10px;
     border: none;
+    box-shadow: 2px 2px 3px #333;
+}
+#enviar-input:hover, #clean-input:hover {
+    background-color: #555f4c;
 }
 
 a{
@@ -77,6 +81,20 @@ a{
     text-decoration: none;
 }
 
+fieldset {
+    border: none;
+}
+
+
+@media (max-width: 690px) {
+    .geral{
+        gap: 10%;
+    }
+    .botoes {
+        margin-left: 0px;
+    }
+
+}
 
 
 

@@ -10,106 +10,114 @@
     <header>
     </header>
     
-    <section id="sec1">
-        <div class="container geral">
+    <main>
 
-            <div class="container left">
-                <div class="label_box">
-                    <label>Nome Completo: <br/>
-                        <input type="text" name="user" required minlength="2" placeholder="Nome Completo">
-                    </label>
+    <form action="Form1/banco" method="POST" enctype="multipart/form-data">
+
+        <fieldset>
+
+            <section id="sec1">
+                <div class="container geral">
+
+                    <div class="container left">
+                        <div class="label_box">
+                            <label>Nome Completo: <br/>
+                                <input type="text" name="user" required minlength="2" placeholder="Nome Completo">
+                            </label>
+                        </div>
+                        
+
+                        <div class="label_box">
+                            <label>RG: <br/>
+                                <input type="number" name="rg" required minlength="9" placeholder="00.000.000-0">
+                            </label>
+                        </div>
+                        
+
+                        <div class="label_box">
+                            <label>Nome do Responsável: <br/>
+                                <input type="text" name="parent" required minlength="2" placeholder="Nome do Responsável">
+                            </label>
+                        </div>
+                        
+
+                        <div class="label_box">
+                            <label>Escolaridade: <br/>
+                                <select name="escolaridade" id="level">
+                                    <option value="Selecione" selected>Selecione</option> 
+                                    <option value="primeiro">1º Grau</option>
+                                    <option value="segundo">2º Grau</option>
+                                    <option value="superior">Graduação</option>
+                                </select>            
+                            </label>
+                        </div>
+                        
+
+                        <div class="label_box">
+                            <label>Telefone: <br/>
+                                <input type="tel" name="phone">
+                            </label>
+                        </div>
+                        
+
+                        <div class="label_box">
+                            <label>Email: <br/>
+                                <input type="email" nome="email" placeholder="exemplo@gmail.com">
+                            </label>
+                        </div>            
+                            
+                    </div>
+
+
+                    <div class="container right">
+                        <div class="label_box">
+                            <label>Data de Nascimento: <br>
+                                <input type="date" name="nascimento" placeholder="__/__/____">
+                            </label>
+                        </div>
+                        
+
+                        <div class="label_box">
+                            <label>CPF: <br/>
+                                <input type="number" name="cpf" required minlength="11" placeholder="000.000.000-00">
+                            </label>
+                        </div>
+                        
+
+                        <div class="label_box">
+                            <label>Profissão: <br/>
+                                <input type="text" name="profissao" placeholder="Profissão">
+                            </label>
+                        </div>
+                        
+
+                        <div class="label_box">
+                            <label>Celular: <br/>
+                                <input type="tel" name="cellphone" placeholder="(00) 0.0000-0000" required>
+                            </label>
+                        </div>
+                        
+                    </div>
                 </div>
-                
+            </section>
 
-                <div class="label_box">
-                    <label>RG: <br/>
-                        <input type="number" name="rg" required minlength="9" placeholder="00.000.000-0">
-                    </label>
+            <section id="sec2">
+                <div class="botoes">
+                    <div class="button_left">
+                        <input id="enviar-input" type="submit" value="Cadastrar"/>
+                    </div>
+
+                    <div class="button_right">
+                        <input id="clean-input" type="submit" value="Limpar Campos"/>
+                    </div>
                 </div>
-                
+            </section>
 
-                <div class="label_box">
-                    <label>Nome do Responsável: <br/>
-                        <input type="text" name="parent" required minlength="2" placeholder="Nome do Responsável">
-                    </label>
-                </div>
-                
+        </fieldset> 
 
-                <div class="label_box">
-                    <label>Escolaridade: <br/>
-                        <select name="escolaridade" id="level">
-                            <option value="Selecione" selected>Selecione</option> 
-                            <option value="primeiro">1º Grau</option>
-                            <option value="segundo">2º Grau</option>
-                            <option value="superior">Graduação</option>
-                        </select>            
-                    </label>
-                </div>
-                
+    </form>
 
-                <div class="label_box">
-                    <label>Telefone: <br/>
-                        <input type="tel" name="phone">
-                    </label>
-                </div>
-                
-
-                <div class="label_box">
-                    <label>Email: <br/>
-                        <input type="email" nome="email" placeholder="exemplo@gmail.com">
-                    </label>
-                </div>            
-                    
-            </div>
-
-
-            <div class="container right">
-                <div class="label_box">
-                    <label>Data de Nascimento: <br>
-                        <input type="date" name="nascimento" placeholder="__/__/____">
-                    </label>
-                </div>
-                
-
-                <div class="label_box">
-                    <label>CPF: <br/>
-                        <input type="number" name="cpf" required minlength="11" placeholder="000.000.000-00">
-                    </label>
-                </div>
-                
-
-                <div class="label_box">
-                    <label>Profissão: <br/>
-                        <input type="text" name="profissao" placeholder="Profissão">
-                    </label>
-                </div>
-                
-
-                <div class="label_box">
-                    <label>Celular: <br/>
-                        <input type="tel" name="cellphone" placeholder="(00) 0.0000-0000" required>
-                    </label>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-
-    <section id="sec2">
-        <div class="botoes">
-            <div class="button_left">
-                <button type="submit">
-                    <a href="">Cadastrar</a>
-                </button>
-            </div>
-
-            <div class="button_right">
-                <button type="submit">
-                    <a href="">Limpar Campos</a>
-                </button>
-            </div>
-        </div>
-    </section>
+    </main>
 
 </body>
 </html>
